@@ -216,6 +216,9 @@ public class FileSystem {
 		
 		files.clear();
 		
+		if(filesInRootDir == null) 
+			return();
+		
 		for(String fileName: filesInRootDir) {
 			files.add(fileName);
 		}
@@ -224,8 +227,6 @@ public class FileSystem {
 
 
 }
-
-record MyFile(String name) {}
 
 class FileAlreadyExistException extends Exception {
 	
