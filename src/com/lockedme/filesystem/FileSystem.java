@@ -217,7 +217,7 @@ public class FileSystem {
 		files.clear();
 		
 		if(filesInRootDir == null) 
-			return();
+			return;
 		
 		for(String fileName: filesInRootDir) {
 			files.add(fileName);
